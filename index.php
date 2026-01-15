@@ -89,6 +89,7 @@
     <form action="" method="post">
         <h2>User Form</h2>
         <input type="text" name="name" placeholder="Enter your Name" required>
+        <input type="text" name="course" placeholder="Enter your Course" required>
         <input type="email" name="email" placeholder="Enter your Email" required>
         <input type="text" name="address" placeholder="Enter your Address" required>
         <button name="btn">Submit</button>
@@ -100,10 +101,11 @@
 
         if(isset($_POST['btn'])){
             $name = $_POST['name'];
+            $course = $_POST['course'];
             $email = $_POST['email'];
             $address = $_POST['address'];
 
-            $query = "INSERT INTO `user`(`Name`, `Email`, `Address`) VALUES ('$name','$email','$address')";
+            $query = "INSERT INTO `user`(`Name`,`Course`,`Email`, `Address`) VALUES ('$name','$course','$email','$address')";
             $result = mysqli_query($connection, $query);
 
             if ($result) {

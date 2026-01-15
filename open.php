@@ -134,12 +134,12 @@
 
             foreach ($result as $row) {
                 echo "<tr>";
-                echo "<td>{$row['Id']}</td>";
-                echo "<td>{$row['Name']}</td>";
-                echo "<td>{$row['Email']}</td>";
-                echo "<td>{$row['Address']}</td>";
-                echo "<td><a href='edit.php?id={$row['Id']}&name={$row['Name']}&email={$row['Email']}&address={$row['Address']}'>Edit</a></td>";
-                echo "<td><a href='delete.php?id={$row['Id']}'>Delete</a></td>";
+                echo "<td>{$row['id']}</td>";
+                echo "<td>{$row['name']}</td>";
+                echo "<td>{$row['email']}</td>";
+                echo "<td>{$row['address']}</td>";
+                echo "<td><a href='edit.php?id={$row['id']}&name={$row['name']}&email={$row['email']}&address={$row['address']}'>Edit</a></td>";
+                echo "<td><a href='delete.php?id={$row['id']}'>Delete</a></td>";
                 echo "</tr>";
             }
             ?>

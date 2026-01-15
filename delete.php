@@ -4,7 +4,7 @@ include "./db1.php";
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
 
-    $query = "DELETE FROM `user` WHERE Id = $id";
+    $query = "DELETE FROM `user` WHERE id = $id";
     $result = mysqli_query($connection, $query);
 
     if ($result) {
